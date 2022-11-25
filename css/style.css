@@ -1,7 +1,7 @@
 body {
   font-family: "Poppins", sans-serif;
   color: #0c0c0c;
-  background-color: #ffffff;
+  background-color: #5f6880;
 }
 
 .layout_padding {
@@ -39,15 +39,13 @@ body {
 
 .custom_heading-container h2 {
   font-weight: bold;
-  border-bottom: 1px solid #feb543;
+  border-bottom: 1px solid #4362fe;
   padding-bottom: 5px;
 }
 
 /*header section*/
 .hero_area {
   height: 94vh;
-  background: -webkit-gradient(linear, left top, right top, from(#864ddf), to(#203376));
-  background: linear-gradient(to right, #864ddf, #203376);
 }
 
 .hero_area::before {
@@ -55,11 +53,10 @@ body {
   position: absolute;
   width: 58%;
   height: 86%;
-  background-image: url(../images/hero-bg.png);
   background-size: 100% 100%;
   background-repeat: no-repeat;
   top: 25px;
-  right: 0;
+  right: 0px;
 }
 
 .sub_page .hero_area {
@@ -89,7 +86,7 @@ body {
 
 .custom_nav-container.navbar-expand-lg .navbar-nav .nav-link {
   padding: 10px 30px;
-  color: #f9fcfb;
+  color: #0865ce;
   text-align: center;
   text-transform: uppercase;
 }
@@ -117,7 +114,7 @@ a:focus {
   text-transform: uppercase;
   font-weight: bold;
   font-size: 24px;
-  color: #fafcfd;
+  color: #0a1591;
 }
 
 .custom_nav-container .nav_search-btn {
@@ -143,8 +140,9 @@ a:focus {
 .navbar-brand span {
   font-size: 40px;
   font-weight: 700;
-  color: #f9fcfb;
+  color: #0d448d;
   margin-top: 5px;
+  margin-bottom: 20px;
   text-transform: uppercase;
 }
 
@@ -165,15 +163,17 @@ a:focus {
 /*end header section*/
 /* slider section */
 .slider_section {
-  color: #f9fcfb;
+  color: #1f1f1f;
   display: -webkit-box;
+  background-color: white;
+  box-shadow: 0px 0px 20px 10px;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  height: 90%;
+  height: 100%;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
@@ -221,7 +221,7 @@ a:focus {
 
 .slider_section .carousel_btn-container .carousel-control-prev:hover,
 .slider_section .carousel_btn-container .carousel-control-next:hover {
-  background-color: #feb543;
+  background-color: #0d448d;
 }
 
 .slider_section .carousel_btn-container .carousel-control-prev {
@@ -264,7 +264,7 @@ a:focus {
 .slider_detail-box .btn-box a {
   display: inline-block;
   padding: 12px 40px;
-  background-color: #feb543;
+  background-color: #0d448d;
   color: #f9fcfb;
   border-radius: 25px;
   -webkit-box-shadow: 0px 2px 7px 0px rgba(32, 50, 117, 0.26);
@@ -281,16 +281,21 @@ a:focus {
 }
 
 .slider_img-box {
-  width: 75%;
-  margin: 0 auto;
+  width: 100%;
 }
 
 .slider_img-box img {
-  width: 100%;
+  -webkit-filter: grayscale(100%); /* Safari 6.0 - 9.0 */
+  filter: grayscale(100%);
+  opacity: 25%;
+  /* margin-left: -20%; */
+  /* margin-bottom: 60px; */
+  width: 200%;
 }
 
 .welcome_section {
   text-align: center;
+  color: #d7d7d7;
 }
 
 .welcome_section .img-box {
@@ -299,6 +304,9 @@ a:focus {
 }
 
 .welcome_section .img-box img {
+  -webkit-filter: grayscale(50%); /* Safari 6.0 - 9.0 */
+  filter: grayscale(50%);
+  opacity: 25%;
   width: 100%;
 }
 
@@ -309,7 +317,7 @@ a:focus {
 .welcome_section .detail-box a {
   display: inline-block;
   padding: 12px 40px;
-  background-color: #feb543;
+  background-color: #0d448d;
   color: #f9fcfb;
   border-radius: 25px;
   -webkit-box-shadow: 0px 2px 7px 0px rgba(32, 50, 117, 0.26);
@@ -327,13 +335,14 @@ a:focus {
 
 .service_section {
   text-align: center;
-  color: #f9fcfb;
-  background-image: url(../images/service-bg.png);
+  color: #1f1f1f;
+  background-color: white;
+  box-shadow: 0px 0px 20px 10px;
   background-size: 100% 100%;
-  padding-top: 275px;
-  padding-bottom: 125px;
+  padding-top: 75px;
+  padding-bottom: 75px;
   background-repeat: no-repeat;
-  margin-top: -150px;
+  margin-top: -100px;
 }
 
 .service_section .custom_heading-container h2 {
@@ -358,7 +367,7 @@ a:focus {
 }
 
 .service_section .service_container .service_box .img-box {
-  border-radius: 18px;
+  border-radius: 10px;
   overflow: hidden;
 }
 
@@ -377,7 +386,7 @@ a:focus {
 .service_section a {
   display: inline-block;
   padding: 12px 40px;
-  background-color: #feb543;
+  background-color: #0d448d;
   color: #f9fcfb;
   border-radius: 25px;
   -webkit-box-shadow: 0px 2px 7px 0px rgba(32, 50, 117, 0.26);
@@ -398,6 +407,7 @@ a:focus {
 }
 
 .problem_section {
+  color: #d7d7d7;
   text-align: center;
 }
 
@@ -417,7 +427,7 @@ a:focus {
 .problem_section .detail-box a {
   display: inline-block;
   padding: 12px 40px;
-  background-color: #feb543;
+  background-color: #0d448d;
   color: #f9fcfb;
   border-radius: 25px;
   -webkit-box-shadow: 0px 2px 7px 0px rgba(32, 50, 117, 0.26);
@@ -436,7 +446,7 @@ a:focus {
 .why_section {
   color: #f9fcfb;
   background: -webkit-gradient(linear, left top, right top, from(#1b3374), to(#8f4fe8));
-  background: linear-gradient(to right, #1b3374, #8f4fe8);
+  background: linear-gradient(to right, #3635ad, #486ff8);
 }
 
 .why_section .custom_heading-container h2 {
@@ -491,7 +501,7 @@ a:focus {
 
 .client_section .carousel-control-prev:hover,
 .client_section .carousel-control-next:hover {
-  background-color: #feb543;
+  background-color: #0d448d;
 }
 
 .client_section .carousel-control-prev {
@@ -543,6 +553,12 @@ a:focus {
   text-transform: uppercase;
   color: #0b93b1;
   margin: 0;
+}
+
+.contact_section{
+  color: #1f1f1f;
+  background-color: white;
+  box-shadow: 0px 0px 20px 10px;
 }
 
 .contact_section .contact_heading {
@@ -611,6 +627,7 @@ a:focus {
 }
 
 .info_section {
+  color: #f9fcfb;
   position: relative;
   font-family: "Poppins", sans-serif;
 }
