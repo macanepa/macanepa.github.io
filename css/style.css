@@ -39,7 +39,7 @@ body {
 
 .custom_heading-container h2 {
   font-weight: bold;
-  border-bottom: 1px solid #4362fe;
+  border-bottom: 1px solid #c1c1c1;
   padding-bottom: 5px;
 }
 
@@ -427,8 +427,8 @@ a:focus {
 .problem_section .detail-box a {
   display: inline-block;
   padding: 12px 40px;
-  background-color: #0d448d;
-  color: #f9fcfb;
+  background-color: #cbcbcb;
+  color: #262626;
   border-radius: 25px;
   -webkit-box-shadow: 0px 2px 7px 0px rgba(32, 50, 117, 0.26);
   box-shadow: 0px 2px 7px 0px rgba(32, 50, 117, 0.26);
@@ -594,29 +594,20 @@ a:focus {
   background-position: 98%;
 }
 
+
 .contact_section button {
   display: inline-block;
   padding: 12px 40px;
-  background-color: #a053f9;
+  background-color: #0d448d;
   color: #f9fcfb;
-  border-radius: 5px;
+  border-radius: 25px;
   -webkit-box-shadow: 0px 2px 7px 0px rgba(32, 50, 117, 0.26);
   box-shadow: 0px 2px 7px 0px rgba(32, 50, 117, 0.26);
   -webkit-transition: all .3s;
   transition: all .3s;
   border: none;
-  text-transform: uppercase;
-  -webkit-box-shadow: none;
-          box-shadow: none;
-  outline: none;
-  margin-top: 35px;
-  font-size: 15px;
 }
 
-.contact_section button:hover {
-  -webkit-transform: translateY(-7px);
-          transform: translateY(-7px);
-}
 
 /* info section */
 .footer_bg {
