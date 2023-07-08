@@ -42,7 +42,7 @@
     z-index: 0;
     left: 0;
     top: 0;
-    transform: scale(1.7);
+    /* transform: scale(1.7); */
   }
 
 
@@ -116,7 +116,7 @@
     z-index: 0;
     left: 0;
     top: 0;
-    transform: scale(1.5);
+    /* transform: scale(1.5); */
   }
 
   .slider_section ol.carousel-indicators {
@@ -168,8 +168,8 @@
 
 @media (max-width: 360px) {}
 
-@media (min-width: 1200px) {
+@media (min-width: 1000px) {
   .container {
-    max-width: 1170px;
+    max-width: 95%;
   }
 }
