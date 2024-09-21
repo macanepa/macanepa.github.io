@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 
 <head>
   <meta charset="utf-8" />
@@ -16,347 +16,606 @@
     content="Databam ofrece datos inmobiliarios completos e información de propiedades para tomar decisiones informadas en la industria.">
   <meta name="author" content="" />
 
+  <title>
+    Data Inmobiliaria Compra-Venta|Herencia|Adjudicaciones
+  </title>
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
 
+  <!--Replace with your tailwind.css once created-->
+  <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,700" rel="stylesheet" />
+  <!-- Define your gradient here - use online tools to find a gradient matching your branding-->
+  <style>
+    .gradient {
+      background: linear-gradient(90deg, rgba(28, 75, 130, 1) 0%, rgba(28, 75, 130, 0.8) 100%);
+      /* Cambiado a azul */
+    }
 
-  <title>Data Inmobiliaria Compra-Venta|Herencia|Adjudicaciones</title>
+    .navbar {
+      backdrop-filter: blur(10px);
+      background-color: rgba(255, 255, 255, 0.8);
+    }
 
-  <!-- slider stylesheet -->
-  <link rel="stylesheet" type="text/css"
-    href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.1.3/assets/owl.carousel.min.css" />
+    /* Estilo para el botón FAQ */
+    .faq-button {
+      transition: background-color 0.2s;
+    }
 
-  <!-- bootstrap core css -->
-  <link rel="stylesheet" type="text/css" href="css/bootstrap.css" />
-
-  <!-- fonts style -->
-  <link href="https://fonts.googleapis.com/css?family=Dosis:400,500|Poppins:400,700&amp;display=swap"
-    rel="stylesheet" />
-  <!-- Custom styles for this template -->
-  <link href="css/style.css" rel="stylesheet" />
-  <!-- responsive style -->
-  <link href="css/responsive.css" rel="stylesheet" />
+    .faq-button:hover {
+      background-color: rgba(229, 229, 229, 0.5);
+      /* Color de fondo claro al pasar el mouse */
+    }
+  </style>
 </head>
 
-<body>
-  <div class="hero_area">
+<body class="leading-normal tracking-normal text-white gradient" style="font-family: 'Source Sans Pro', sans-serif;">
+  <!--Nav-->
 
-    <!-- end header section -->
-    <!-- slider section -->
-    <section class=" slider_section">
-      <a class='logo'>
-        <img style="width: 10%; min-width: 200px;" src="images/Untitledlogo.png" alt="Databam logo" />
-        <!-- <span>
-          Databam
-        </span> -->
-      </a>
-      <div class="container">
-        <div class="row">
-          <div class="col-lg-4 col-md-6" style="padding-right: 5px; padding-left: 5px;">
-            <div class="slider_detail-box">
-              <!-- <a class="navbar-brand" href="index.html">
-                <span>
-                  Databam
-                </span>
-              </a> -->
-              <h1>
-                Data Inmobiliaria<br />
-                Para la Toma de Decisiones
-              </h1>
-              <p>
-                ✅ Actualizados Junio 2024<br />
-                ✅ Compra Venta, Herencias, Adjudicaciones<br />
-                ✅ Habitacional, Oficina, Comercio, Industria<br />
-                ✅ Constructibilidad, Avalúos, Antigüedad, Coordenadas<br />
-                ✅ 10+ Años de registros para 8MM de propiedades<br />
-                ✅ Actualizados semanalmente
-              </p>
-              <div class="btn-box">
-                <a href="#contact" class="btn-1">
-                  Contáctanos
-                </a>
-                <a href="https://my.databam.cl/" class="btn-1" target="_blank" rel="noopener noreferrer">
-                  Demo
-                </a>
-              </div>
-            </div>
-          </div>
-          <div class="col-lg-8 col-md-6" style="padding-right: 5px; padding-left: 0px;">
-            <div class="slider_img-box">
-              <!-- <img src="images/real-estate.png" alt=""/> -->
-              <img src="images/dashboard.png" alt="Dashboard data inmobiliaria" />
-            </div>
-          </div>
-        </div>
+  <nav class="navbar shadow fixed top-0 left-0 w-full z-10 bg-white">
+    <div class="w-full container mx-auto flex flex-wrap items-center justify-between mt-0 py-2">
+      <div class="pl-4 flex items-center">
+        <a class="toggleColour text-white no-underline hover:no-underline font-bold text-2xl lg:text-3xl" href="#"
+          style="color: rgba(28, 75, 130, 1);">
+          <img src="databam.png" class="h-9 inline" alt="DATABAM icon" />
+          DATABAM
+        </a>
       </div>
-    </section>
-    <!-- end slider section -->
-  </div>
+      <div class="flex items-center pr-4">
+        <a href="https://my.databam.cl/users/sign_up" id="navAction"
+          class="bg-white text-gray-800 font-bold rounded-full py-1 px-3 md:py-2 md:px-5 shadow opacity-75 focus:outline-none focus:shadow-outline transform transition hover:scale-105 duration-300 ease-in-out">
+          Demo
+        </a>
+        <a href="https://my.databam.cl/users/sign_in" id="navLogin"
+          class="ml-2 bg-blue-900 text-white font-bold rounded-full py-1 px-3 md:py-2 md:px-5 shadow opacity-75 focus:outline-none focus:shadow-outline transform transition hover:scale-105 duration-300 ease-in-out">
+          Ingresar
+        </a>
 
-  <!-- welcome section -->
-  <section class="welcome_section custom_padding">
-    <div class="container">
-      <h2>
+      </div>
+    </div>
+    <hr class="border-b border-gray-100 opacity-25 my-0 py-0" />
+  </nav>
+
+  <!--Hero-->
+  <div class="pt-24">
+    <div class="container px-3 mx-auto flex flex-wrap flex-col md:flex-row items-center">
+      <!--Left Col-->
+      <div class="flex flex-col w-full lg:w-1/2 justify-center items-start text-center md:text-left">
+        <p class="uppercase tracking-loose w-full">Data As A Service</p>
+        <h1 class="my-4 text-2xl md:text-5xl font-bold leading-tight sm:text-center md:text-left w-full">
+          Data Inmobiliaria<br />
+          Para la Toma de Decisiones
+        </h1>
+        <p class="leading-normal text-left ml-5 md:ml-0 text-sm md:text-2xl mb-8">
+          ✅ Actualizados Agosto 2024<br />
+          ✅ Compra Venta, Herencias, Adjudicaciones<br />
+          ✅ Habitacional, Oficina, Comercio, Industria<br />
+          ✅ Constructibilidad, Avalúos, Antigüedad, Coordenadas<br />
+          ✅ 10+ Años de registros para 8 millones de propiedades<br />
+          ✅ Actualizados periódicamente
+        </p>
+
+        <div class="btn-box mx-auto md:mx-0" style="z-index: 9;">
+          <a href="#contactSection"
+            class="mx-auto ml-1 inline-block text-center bg-white text-gray-800 font-bold rounded-full py-4 px-8 shadow-lg focus:outline-none focus:shadow-outline transform transition hover:scale-105 duration-300 ease-in-out">
+            Contáctanos
+          </a>
+
+          <a href="https://my.databam.cl/users/sign_up/"
+            class="mx-auto ml-1 inline-block text-center bg-white text-gray-800 font-bold rounded-full py-4 px-8 shadow-lg focus:outline-none focus:shadow-outline transform transition hover:scale-105 duration-300 ease-in-out">
+            Demo Gratuita
+          </a>
+        </div>
+
+      </div>
+      <!--Right Col-->
+      <div class="w-full lg:w-1/2 py-6 text-center">
+        <img class="w-full md:w-4/5 z-50 rounded-lg shadow-lg" src="app.png" />
+      </div>
+    </div>
+  </div>
+  <div class="relative -mt-12 lg:-mt-24">
+    <svg viewBox="0 0 1428 174" version="1.1" xmlns="http://www.w3.org/2000/svg"
+      xmlns:xlink="http://www.w3.org/1999/xlink">
+      <g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g transform="translate(-2.000000, 44.000000)" fill="#FFFFFF" fill-rule="nonzero">
+          <path
+            d="M0,0 C90.7283404,0.927527913 147.912752,27.187927 291.910178,59.9119003 C387.908462,81.7278826 543.605069,89.334785 759,82.7326078 C469.336065,156.254352 216.336065,153.6679 0,74.9732496"
+            opacity="0.100000001"></path>
+          <path
+            d="M100,104.708498 C277.413333,72.2345949 426.147877,52.5246657 546.203633,45.5787101 C666.259389,38.6327546 810.524845,41.7979068 979,55.0741668 C931.069965,56.122511 810.303266,74.8455141 616.699903,111.243176 C423.096539,147.640838 250.863238,145.462612 100,104.708498 Z"
+            opacity="0.100000001"></path>
+          <path
+            d="M1046,51.6521276 C1130.83045,29.328812 1279.08318,17.607883 1439,40.1656806 L1439,120 C1271.17211,77.9435312 1140.17211,55.1609071 1046,51.6521276 Z"
+            id="Path-4" opacity="0.200000003"></path>
+        </g>
+        <g transform="translate(-4.000000, 76.000000)" fill="#FFFFFF" fill-rule="nonzero">
+          <path
+            d="M0.457,34.035 C57.086,53.198 98.208,65.809 123.822,71.865 C181.454,85.495 234.295,90.29 272.033,93.459 C311.355,96.759 396.635,95.801 461.025,91.663 C486.76,90.01 518.727,86.372 556.926,80.752 C595.747,74.596 622.372,70.008 636.799,66.991 C663.913,61.324 712.501,49.503 727.605,46.128 C780.47,34.317 818.839,22.532 856.324,15.904 C922.689,4.169 955.676,2.522 1011.185,0.432 C1060.705,1.477 1097.39,3.129 1121.236,5.387 C1161.703,9.219 1208.621,17.821 1235.4,22.304 C1285.855,30.748 1354.351,47.432 1440.886,72.354 L1441.191,104.352 L1.121,104.031 L0.457,34.035 Z">
+          </path>
+        </g>
+      </g>
+    </svg>
+  </div>
+  <section class="bg-white border-b py-8">
+    <div class="container max-w-5xl mx-auto m-8">
+      <h2 class="w-full my-2 md:text-5xl text-xl px-4 font-bold leading-tight text-center text-gray-800">
         Estar informado es lo más importante para tomar decisiones
       </h2>
-      <br />
-      <h4>Por eso</h4>
-      <div class="custom_heading-container">
-        <h2>
-          Levantamos Data para Tu Negocio
-        </h2>
+      <div class="w-full mb-4">
+        <div class="h-1 mx-auto gradient w-64 opacity-25 my-0 py-0 rounded-t"></div>
       </div>
-      <h5 style="padding: 30px; ">
-        Nuestro equipo de especialistas recopila datos de diversas fuentes de información<br />
-        Tú nos dices donde la necesitas, y nosotros nos encargamos del resto</span><br />
-      </h5>
+      <div class="flex flex-wrap">
+        <div class="w-5/6 sm:w-1/2 p-6">
+          <h3 class="text-2xl md:text-3xl text-gray-800 font-bold leading-none mb-3">
+            Levantamos Data para Tu Negocio
+          </h3>
+          <h5 class="text-gray-600 mb-8">
+            Nuestro equipo de especialistas recopila datos de diversas fuentes de información del <strong>sector
+              inmobiliario</strong>.
+            Tú nos dices donde la necesitas, y nosotros nos encargamos del resto</span>
+          </h5>
+        </div>
+        <div class="w-full sm:w-1/2 p-6">
+          <img src="house_sale.svg" class="w-full sm:h-64 mx-auto" alt="House Sale">
+        </div>
+      </div>
+      <div class="flex flex-wrap flex-col-reverse sm:flex-row">
+        <div class="w-full sm:w-1/2 px-6 mt-0">
+          <img src="data.svg" class="w-5/6 sm:h-64 mx-auto" alt="House Sale">
+        </div>
+        <div class="w-full sm:w-1/2 p-6 mt-6">
+          <div class="align-middle">
+            <h3 class="text-2xl md:text-3xl text-gray-800 font-bold leading-none mb-3">
+              Entrega de Datos a la medida
+            </h3>
+            <p class="text-gray-600 mb-8">
+              Contamos con una plataforma web para acceder a nuestra información, aquí encontrarás varios reportes
+              inmobiliarios. <br><br>También contamos con <strong>API</strong> y venta de <strong>datasets
+                masivos</strong> para soluciones empresariales.
+            </p>
+          </div>
+        </div>
+      </div>
     </div>
-
   </section>
-  <!-- end welcome section -->
-
-  <!-- service section -->
-
-  <section class="service_section">
-    <div class="container">
-      <div class="custom_heading-container">
-        <h2>
-          Nuestros Servicios
-        </h2>
+  <section class="bg-white border-b py-8">
+    <div class="container mx-auto flex flex-wrap pt-4 pb-12">
+      <h1 class="w-full my-2 text-3xl md:text-5xl font-bold leading-tight text-center text-gray-800">
+        Nuestros Datos
+      </h1>
+      <div class="w-full mb-4">
+        <div class="h-1 mx-auto gradient w-64 opacity-25 my-0 py-0 rounded-t"></div>
       </div>
-      <div class="service_container layout_padding2">
-        <div class="service_box">
-          <div class="img-box">
-            <!-- <img src="images/s-1.jpg" alt=""/> -->
-          </div>
-          <div class="detail-box">
-            <h4>
-              Base de Datos<br />
-              Transaccional Conservador de Bienes Raíces
+
+      <div class="w-full lg:w-1/3 p-6 flex flex-col flex-grow flex-shrink">
+        <div class="flex-1 bg-white rounded-t rounded-b-none overflow-hidden shadow">
+          <div href="#" class="flex flex-wrap no-underline hover:no-underline">
+            <h4 class="w-full font-bold text-xl text-gray-800 px-6 pt-6">
+              Base de Datos Transaccional <br />Conservador de Bienes Raíces
             </h4>
-            <p>
+            <p class="text-gray-800 text-base px-6 mb-5 pt-2">
               Nuestra base de datos contempla inscripciones de
-              20+ comunas del Gran Santiago. Incluye ROL, Precios, RUT, Coordenadas, Naturaleza y más
+              20+ comunas del Gran Santiago. Incluye ROL, Precios, Coordenadas, Naturaleza y más
             </p>
           </div>
         </div>
-        <div class="service_box">
-          <div class="img-box">
-            <!-- <img src="images/s-2.jpg" alt=""/> -->
+        <div class="flex-none mt-auto bg-white rounded-b rounded-t-none overflow-hidden shadow p-6">
+          <div class="flex items-center justify-center">
+            <a href="https://my.databam.cl/users/sign_up"
+              class="mx-auto lg:mx-0 gradient text-white font-bold rounded-full my-0 py-4 px-8 shadow-lg focus:outline-none focus:shadow-outline transform transition hover:scale-105 duration-300 ease-in-out">
+              Datos CBR
+            </a>
           </div>
-          <div class="detail-box">
-            <h4>
-              Conectamos<br />
-              ROL - RUT
+        </div>
+      </div>
+
+      <div class="w-full lg:w-1/3 p-6 flex flex-col flex-grow flex-shrink">
+        <div class="flex-1 bg-white rounded-t rounded-b-none overflow-hidden shadow">
+          <div href="#" class="flex flex-wrap no-underline hover:no-underline">
+            <h4 class="w-full font-bold text-xl text-gray-800 px-6 pt-6">
+              Rutificador de Propiedades <br> Dueño - ROL
             </h4>
-            <p>
-              Encuentra a los dueños de una propiedad por ROL, o bien, encuentra las propiedades asociadas a un RUT
+            <p class="text-gray-800 text-base px-6 mb-5 pt-2">
+              Encuentra a los dueños de una propiedad por ROL, o bien, encuentra las propiedades asociadas a una persona
             </p>
           </div>
         </div>
-        <div class="service_box">
-          <div class="img-box">
-            <!-- <img src="images/s-3.jpg" alt=""/> -->
+        <div class="flex-none mt-auto bg-white rounded-b rounded-t-none overflow-hidden shadow p-6">
+          <div class="flex items-center justify-center">
+            <a href="https://my.databam.cl/users/sign_up"
+              class="mx-auto lg:mx-0 gradient text-white font-bold rounded-full my-0 py-4 px-8 shadow-lg focus:outline-none focus:shadow-outline transform transition hover:scale-105 duration-300 ease-in-out">
+              Rutificador
+            </a>
           </div>
-          <div class="detail-box">
-            <h4>
+        </div>
+      </div>
+
+      <div class="w-full lg:w-1/3 p-6 flex flex-col flex-grow flex-shrink">
+        <div class="flex-1 bg-white rounded-t rounded-b-none overflow-hidden shadow">
+          <div href="#" class="flex flex-wrap no-underline hover:no-underline">
+            <h4 class="w-full font-bold text-xl text-gray-800 px-6 pt-6">
               Base de Datos <br />
               Catastral Enriquecida
             </h4>
-            <p>
+            <p class="text-gray-800 text-base px-6 mb-5 pt-2">
               Catastro de los últimos 10+ años para todas las propiedades de Chile. Incluye ROL, constructibilidad,
               avalúos, tipo de uso, coordenadas y más
             </p>
           </div>
         </div>
-      </div>
-      <h4>Explora nuestro demo en Data Studio y descubre nuestra información inmobiliaria en tiempo real.</h4><br />
-      <!-- <div>
-        <a href="https://datastudio.google.com/u/0/reporting/25ee7522-d0f5-4044-9c96-f261c138c93c/page/Cu6yC" class="btn-1" target="_blank" rel="noopener noreferrer">
-          Demo
-        </a>
-      </div> -->
-      <!-- <div style="position: relative; width: 100%; padding-bottom: 10.25%; display: block;">
-        <iframe class="demo" porsition='absolute' top='0' left='0' width="100%" height="100%" allowfullscreen title='Demo en Data Studio: Información inmobiliaria en tiempo real' aria-label='Demo data inmobiliaria transaccional, herencia, asociacion rol rut, catastro enrequecido' alt='demo data inmobiliaria' id="demo" src="https://datastudio.google.com/embed/reporting/25ee7522-d0f5-4044-9c96-f261c138c93c/page/Cu6yC" frameborder="0" style="border:0" allowfullscreen></iframe>
-
-        
-      </div> -->
-      <iframe title='Demo en Data Studio: Información inmobiliaria en tiempo real'
-        aria-label='Demo data inmobiliaria transaccional, herencia, asociacion rol rut, catastro enrequecido'
-        alt='demo data inmobiliaria' id="demo"
-        src="https://datastudio.google.com/embed/reporting/25ee7522-d0f5-4044-9c96-f261c138c93c/page/Cu6yC"
-        frameborder="0" style="border:0" allowfullscreen></iframe>
-
-    </div>
-  </section>
-
-  <!-- end service section -->
-  <!--problem section -->
-  <section class="problem_section layout_padding">
-    <div class="container">
-      <div class="custom_heading-container">
-        <h2>
-          Data Delivery a Tu Medida
-        </h2>
-      </div>
-      <div class="layout_padding2">
-        <div class="detail-box">
-          <h5>
-            Nuestra data inmobiliaria está a tu disposición, donde quieras, cuando quieras.
-            </h1>
-            <br />
-            <h2>
-              Data Studio Dashboards • MySQL • PostgreSQL<br />
-              Web Hooks • REST API
-            </h2>
-            <br />
-            <h5>
-              ¿Necesitas una solución personalizada?
-            </h5>
-            <a href="#contact" , style="margin-top: 10px;">
-              Conversemos
+        <div class="flex-none mt-auto bg-white rounded-b rounded-t-none overflow-hidden shadow p-6">
+          <div class="flex items-center justify-center">
+            <a href="https://my.databam.cl/users/sign_up"
+              class="mx-auto lg:mx-0 gradient text-white font-bold rounded-full my-0 py-4 px-8 shadow-lg focus:outline-none focus:shadow-outline transform transition hover:scale-105 duration-300 ease-in-out">
+              Revisa el Catastro
             </a>
+          </div>
         </div>
       </div>
 
     </div>
   </section>
-  <!-- end problem section -->
-  <!-- why section -->
 
-  <!-- <section class="why_section layout_padding">
-    <div class="container">
-      <div class="custom_heading-container">
-        <h2>
-          ¿Por Qué Nosotros?
-        </h2>
+
+  <section class="bg-gray-50 py-8">
+    <div class="container mx-auto px-2 pt-4 pb-12 text-gray-800">
+      <h1 class="w-full my-2 text-3xl md:text-5xl font-bold leading-tight text-center text-gray-800">
+        Precios Plataforma Web
+      </h1>
+      <div class="w-full mb-4">
+        <div class="h-1 mx-auto gradient w-64 opacity-25 my-0 py-0 rounded-t"></div>
       </div>
-      <div class="content-container">
-        <p>
-          Para automatizar la recolección de data se necesita un equipo experto en el área de Web Scraping<br/>
-          Llevamos años perfecciondo nuestras metodologías para que tú negocio se enfoque en las suyas
-        </p>
-        <div class="row">
-          <div class="col-md-3 col-sm-6">
-            <div class="img-box">
-              <img src="images/smiley.png" alt=""/>
+
+      <!-- Toggle between monthly and annual -->
+      <div class="text-lg text-center text-gray-900">Seleccione tipo de facturación</div>
+      <div class="flex justify-center mt-1">
+        <button id="monthlyBtn" class="bg-gray-300 text-gray-800 font-bold py-2 px-4 rounded-l-full active">
+          Mensual
+        </button>
+        <button id="annualBtn" class="bg-gray-300 text-gray-800 font-bold py-2 px-4 rounded-r-full">
+          Anual (2 meses gratis)
+        </button>
+      </div>
+
+
+
+      <div class="overflow-x-auto pb-12 sm:py-4 px-4">
+        <div class="flex space-x-4 w-max mx-auto">
+          <!-- Free Plan -->
+          <div class="inline-block flex-shrink-0 w-80 bg-white mt-4">
+            <div class="bg-white text-gray-600 rounded-t rounded-b-none overflow-hidden shadow">
+              <div class="py-8 text-3xl font-bold text-center border-b-4">
+                Plan Gratis
+                <p class="text-gray-800 text-base text-center px-6 pt-2">
+                  Para independientes que quieren explorar las herramientas de Databam.
+                </p>
+              </div>
+              <ul class="w-full text-center text-sm">
+                <li class="border-b py-4">20 créditos de un solo uso</li>
+                <li class="border-b py-4">1 comuna a elección</li>
+                <li class="border-b py-4">1 usuario</li>
+                <li class="border-b py-4"><strong>Dashboards</strong> <br> Detalle Propiedad, <br>Búsqueda por Mapa,
+                  Rutificador
+                </li>
+              </ul>
             </div>
-            <div class="detail-box">
-              <h3>
-                3 Años
-              </h3>
-              <h6>
-                Levantando Datos
-              </h6>
-            </div>
-          </div>
-          <div class="col-md-3 col-sm-6">
-            <div class="img-box">
-              <img src="images/monitor.png" alt=""/>
-            </div>
-            <div class="detail-box">
-              <h3>
-                Actualización
-              </h3>
-              <h6>
-                periódica de datos
-              </h6>
-            </div>
-          </div>
-          <div class="col-md-3 col-sm-6">
-            <div class="img-box">
-              <img src="images/multiple-users-silhouette.png" alt=""/>
-            </div>
-            <div class="detail-box">
-              <h3>
-                4500+
-              </h3>
-              <h6>
-                CLIENTS
-              </h6>
-            </div>
-          </div>
-          <div class="col-md-3 col-sm-6">
-            <div class="img-box">
-              <img src="images/bar-chart.png" alt=""/>
-            </div>
-            <div class="detail-box">
-              <h3>
-                19000+
-              </h3>
-              <h6>
-                DAILY business
-              </h6>
+            <div class="bg-white rounded-b rounded-t-none overflow-hidden shadow p-6">
+              <div class="w-full pt-6 text-3xl text-gray-600 font-bold text-center">
+                $0
+              </div>
+              <div class="flex items-center justify-center">
+                <a href="https://my.databam.cl/users/sign_up"
+                  class="gradient text-white font-bold rounded-full my-6 py-4 px-8 shadow-lg focus:outline-none focus:shadow-outline transform transition hover:scale-105 duration-300 ease-in-out">
+                  Regístrate Gratis
+                </a>
+              </div>
             </div>
           </div>
+
+          <!-- Tasador Plan -->
+          <div class="inline-block flex-shrink-0 w-80 bg-white mt-4">
+            <div class="bg-white text-gray-600 rounded-t rounded-b-none overflow-hidden shadow">
+              <div class="py-8 text-3xl font-bold text-center border-b-4">
+                Plan Tasador
+                <p class="text-gray-800 text-base text-center px-6 pt-2">
+                  Para tasadores independientes que buscan datos para apoyar sus tasaciones.
+                </p>
+              </div>
+              <ul class="w-full text-center text-sm">
+                <li id="creditsTasador" class="border-b py-4">200 créditos mensuales</li>
+                <li class="border-b py-4">Todas las comunas de Chile</li>
+                <li class="border-b py-4">1 usuario</li>
+                <li class="border-b py-4"><strong>Dashboards</strong> <br> Detalle Propiedad, <br>Búsqueda por Mapa,
+                  Rutificador
+                </li>
+              </ul>
+            </div>
+            <div class="bg-white rounded-b rounded-t-none overflow-hidden shadow p-6">
+              <div class="w-full pt-6 text-3xl text-gray-600 font-bold text-center">
+                <span id="tasadorPrice">$50.000</span>
+                <span class="text-base">/ <span id="tasadorPeriod">mes</span>
+                </span>
+              </div>
+              <div class="flex items-center justify-center">
+                <a href="https://my.databam.cl/users/sign_up"
+                  class="gradient text-white font-bold rounded-full my-6 py-4 px-8 shadow-lg focus:outline-none focus:shadow-outline transform transition hover:scale-105 duration-300 ease-in-out">
+                  Regístrate para Contratar
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Empresa Plan -->
+          <div class="inline-block flex-shrink-0 w-80 bg-white mt-4">
+            <div class="bg-white text-gray-600 rounded-t rounded-b-none overflow-hidden shadow">
+              <div class="py-8 text-3xl font-bold text-center border-b-4">
+                Plan Empresa
+                <p class="text-gray-800 text-base text-center px-6 pt-2">
+                  Para organizaciones que buscan implementar databam en sus flujos de trabajo.
+                </p>
+              </div>
+              <ul class="w-full text-center text-sm">
+                <li id="creditsEmpresa" class="border-b py-4">600 créditos mensuales</li>
+                <li class="border-b py-4">Todas las comunas de Chile</li>
+                <li class="border-b py-4">Múltiples usuarios</li>
+                <li id="dashboardsEmpresa" class="border-b py-4"><strong>Dashboards</strong> <br> Dashboards Plan
+                  Tasador<br> + Leads de Herencia
+                </li>
+              </ul>
+            </div>
+            <div class="bg-white rounded-b rounded-t-none overflow-hidden shadow p-6">
+              <div class="w-full pt-6 text-3xl text-gray-600 font-bold text-center">
+                <span class="text-sm">desde </span>
+                <span id="empresaPrice">$100.000</span>
+                <span class="text-base">/ <span id="empresaPeriod">mes</span></span>
+              </div>
+              <div class="flex items-center justify-center">
+                <a href="https://my.databam.cl/users/sign_up"
+                  class="gradient text-white font-bold rounded-full my-6 py-4 px-8 shadow-lg focus:outline-none focus:shadow-outline transform transition hover:scale-105 duration-300 ease-in-out">
+                  Regístrate para Contratar
+                </a>
+              </div>
+            </div>
+          </div>
+
         </div>
       </div>
+
+
+
+
     </div>
   </section>
-  end why section -->
 
 
 
-
-  <!-- contact section -->
-  <section class="contact_section layout_padding">
-    <div class="container contact_heading">
-      <h2 id="contact">
-        Conversemos!
-      </h2>
-      <p>
-        Ingresa tus datos y nos contactaremos contigo
-      </p>
+  <!-- Change the colour #f8fafc to match the previous section colour -->
+  <svg class="wave-top" viewBox="0 0 1439 147" version="1.1" xmlns="http://www.w3.org/2000/svg"
+    xmlns:xlink="http://www.w3.org/1999/xlink">
+    <g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+      <g transform="translate(-1.000000, -14.000000)" fill-rule="nonzero">
+        <g class="wave" fill="#f8fafc">
+          <path
+            d="M1440,84 C1383.555,64.3 1342.555,51.3 1317,45 C1259.5,30.824 1206.707,25.526 1169,22 C1129.711,18.326 1044.426,18.475 980,22 C954.25,23.409 922.25,26.742 884,32 C845.122,37.787 818.455,42.121 804,45 C776.833,50.41 728.136,61.77 713,65 C660.023,76.309 621.544,87.729 584,94 C517.525,105.104 484.525,106.438 429,108 C379.49,106.484 342.823,104.484 319,102 C278.571,97.783 231.737,88.736 205,84 C154.629,75.076 86.296,57.743 0,32 L0,0 L1440,0 L1440,84 Z">
+          </path>
+        </g>
+        <g transform="translate(1.000000, 15.000000)" fill="#FFFFFF">
+          <g transform="translate(719.500000, 68.500000) rotate(-180.000000) translate(-719.500000, -68.500000) ">
+            <path
+              d="M0,0 C90.7283404,0.927527913 147.912752,27.187927 291.910178,59.9119003 C387.908462,81.7278826 543.605069,89.334785 759,82.7326078 C469.336065,156.254352 216.336065,153.6679 0,74.9732496"
+              opacity="0.100000001"></path>
+            <path
+              d="M100,104.708498 C277.413333,72.2345949 426.147877,52.5246657 546.203633,45.5787101 C666.259389,38.6327546 810.524845,41.7979068 979,55.0741668 C931.069965,56.122511 810.303266,74.8455141 616.699903,111.243176 C423.096539,147.640838 250.863238,145.462612 100,104.708498 Z"
+              opacity="0.100000001"></path>
+            <path
+              d="M1046,51.6521276 C1130.83045,29.328812 1279.08318,17.607883 1439,40.1656806 L1439,120 C1271.17211,77.9435312 1140.17211,55.1609071 1046,51.6521276 Z"
+              opacity="0.200000003"></path>
+          </g>
+        </g>
+      </g>
+    </g>
+  </svg>
+  <section id="contactSection"
+    class="container mx-auto text-center py-6 mb-12 md:w-3/4 lg:w-1/2 bg-gray-100 bg-opacity-0 md:bg-opacity-25 md:shadow-lg rounded-lg">
+    <h1 class="w-full my-2 text-3xl md:text-5xl font-bold leading-tight text-center text-white">
+      Conversemos!
+    </h1>
+    <div class="w-full mb-4">
+      <div class="h-1 mx-auto bg-white w-1/6 opacity-25 my-0 py-0 rounded-t"></div>
     </div>
-    <div class="container" style="width: 50vw;">
-      <form id="my-form" action="https://formspree.io/f/xyyvlggw" method="POST">
-        <div class="form-row">
-          <div class="form-group col-md-6">
-            <label for="inputName4">Nombre</label>
-            <input type="text" class="form-control" name="firstName" id="inputName4" />
-          </div>
-          <div class="form-group col-md-6">
-            <label for="inputLastName4">Apellido</label>
-            <input type="text" class="form-control" name="lastName" id="inputLastName4" />
-          </div>
-          <div class="form-group col-md-6">
-            <label for="inputEmail4">Email</label>
-            <input type="email" class="form-control" name="email" id="inputEmail4" />
-          </div>
-          <div class="form-group col-md-6">
-            <label for="inputPhone4">Teléfono</label>
-            <input type="text" class="form-control" name="phone" id="inputPhone4" />
-          </div>
-        </div>
+    <h3 class="my-4 px-2 text-xl md:text-3xl leading-tight">
+      Ingresa tus datos y nos contactaremos contigo
+    </h3>
+
+
+    <form id="my-form" action="https://formspree.io/f/xyyvlggw" method="POST" class="mx-auto p-6">
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+        <!-- First Name -->
         <div class="form-group">
-          <label for="inputMessage">Mensaje</label>
-          <input type="text" class="form-control" id="inputMessage" name="message" placeholder="" />
+          <label for="inputName4" class="block text-lg text-left text-white">Nombre</label>
+          <input type="text" name="firstName" id="inputName4"
+            class="text-gray-500 mt-1 block w-full px-3 py-2 border border-gray-300 shadow-sm focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm" />
         </div>
-        <div class="g-recaptcha" data-sitekey="6LcjzkQqAAAAAJEQs3gQdRCNwiDVrLP1EZWxk2zf"></div>
-        <p style="text-align: center;" id="my-form-status"></p>
-        <div class="d-flex justify-content-center">
-          <button type="submit" class="btn-1">Enviar</button>
+
+        <!-- Last Name -->
+        <div class="form-group">
+          <label for="inputLastName4" class="block text-lg text-left text-white">Apellido</label>
+          <input type="text" name="lastName" id="inputLastName4"
+            class="text-gray-500 mt-1 block w-full px-3 py-2 border border-gray-300 shadow-sm focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm" />
         </div>
-      </form>
+
+        <!-- Email -->
+        <div class="form-group">
+          <label for="inputEmail4" class="block text-lg text-left text-white">Email</label>
+          <input type="email" name="email" id="inputEmail4"
+            class="text-gray-500 mt-1 block w-full px-3 py-2 border border-gray-300 shadow-sm focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm" />
+        </div>
+
+        <!-- Phone -->
+        <div class="form-group">
+          <label for="inputPhone4" class="block text-lg text-left text-white">Teléfono</label>
+          <input type="text" name="phone" id="inputPhone4"
+            class="text-gray-500 mt-1 block w-full px-3 py-2 border border-gray-300 shadow-sm focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm" />
+        </div>
+      </div>
+
+      <!-- Message -->
+      <div class="form-group mt-6">
+        <label for="inputMessage" class="block text-lg text-left text-white">Mensaje</label>
+        <textarea name="message" id="inputMessage" rows="4"
+          class="text-gray-500 mt-1 block w-full px-3 py-2 border border-gray-300 shadow-sm focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm"></textarea>
+      </div>
+
+      <!-- reCAPTCHA -->
+      <div class="g-recaptcha mt-6" data-sitekey="6LcjzkQqAAAAAJEQs3gQdRCNwiDVrLP1EZWxk2zf"></div>
+
+      <!-- Form Status -->
+      <p id="my-form-status" class="text-center text-white mt-4"></p>
+
+      <!-- Submit Button -->
+      <div class="flex justify-center mt-0">
+        <button
+          class="mx-auto lg:mx-0 bg-white text-gray-800 font-bold rounded-full my-6 py-4 px-8 shadow-lg focus:outline-none focus:shadow-outline transform transition hover:scale-105 duration-300 ease-in-out">
+          Enviar
+        </button>
+      </div>
+    </form>
+
+  </section>
+
+  <section class="bg-white">
+    <div class="container mx-auto px-8 py-8">
+      <div class="mt-3">
+        <h2 class="text-gray-900 text-xl font-bold mb-4">Preguntas Frecuentes</h2>
+        <div class="space-y-4">
+          <!-- Question 1 -->
+          <details class="group">
+            <summary
+              class="text-gray-900 flex justify-between items-center p-4 bg-gray-100 hover:bg-gray-200 cursor-pointer focus:outline-none transition">
+              <span class="font-semibold">¿Qué es DATABAM?</span>
+              <svg class="w-5 h-5 transition-transform duration-200 group-open:rotate-180" viewBox="0 0 20 20"
+                fill="currentColor">
+                <path d="M7 10l5 5 5-5H7z" />
+              </svg>
+            </summary>
+            <div class="p-4 bg-gray-50 text-gray-700">
+              DATABAM es una plataforma de data inmobiliaria pensada en tasadores, corredores de propiedades e
+              inmobiliarias. Hacemos accesible información que por lo general es difícil de recopilar y
+              procesar.
+            </div>
+          </details>
+
+          <!-- Question 2 -->
+
+
+          <!-- Question 3 -->
+          <details class="group">
+            <summary
+              class="text-gray-900 flex justify-between items-center p-4 bg-gray-100 hover:bg-gray-200 cursor-pointer focus:outline-none transition">
+              <span class="font-semibold">¿Qué cobertura tienen los datos?</span>
+              <svg class="w-5 h-5 transition-transform duration-200 group-open:rotate-180" viewBox="0 0 20 20"
+                fill="currentColor">
+                <path d="M7 10l5 5 5-5H7z" />
+              </svg>
+            </summary>
+            <div class="p-4 bg-gray-50 text-gray-700">
+              Para datos de la propiedad (construcciones, terrenos, avalúos, contribuciones, etc) y dueños tenemos
+              cobertura nacional. Para precios transaccionales CBR
+              tenemos cobertura en las 26 comunas del Conservador de Bienes Raíces de Santiago.
+            </div>
+          </details>
+
+          <details class="group">
+            <summary
+              class="text-gray-900 flex justify-between items-center p-4 bg-gray-100 hover:bg-gray-200 cursor-pointer focus:outline-none transition">
+              <span class="font-semibold">¿Cómo funcionan los créditos?</span>
+              <svg class="w-5 h-5 transition-transform duration-200 group-open:rotate-180" viewBox="0 0 20 20"
+                fill="currentColor">
+                <path d="M7 10l5 5 5-5H7z" />
+              </svg>
+            </summary>
+            <div class="p-4 bg-gray-50 text-gray-700">
+              En la plataforma web, cada vez que consultas un dashboard o trazas una figura en el mapa, se consume un
+              crédito. Al finalizar tu ciclo de facturación, tu consumo se reiniciará a 0. Los créditos no son
+              acumulables entre periodos.
+            </div>
+          </details>
+
+
+          <details class="group">
+            <summary
+              class="text-gray-900 flex justify-between items-center p-4 bg-gray-100 hover:bg-gray-200 cursor-pointer focus:outline-none transition">
+              <span class="font-semibold">¿Tienen un modo de prueba?</span>
+              <svg class="w-5 h-5 transition-transform duration-200 group-open:rotate-180" viewBox="0 0 20 20"
+                fill="currentColor">
+                <path d="M7 10l5 5 5-5H7z" />
+              </svg>
+            </summary>
+            <div class="p-4 bg-gray-50 text-gray-700">
+              Sí! Ofrecemos un demo en donde te otorgamos 20 créditos completamente gratis. Podrás escoger solo una
+              comuna para usar tus créditos. En la versión pagada tendrás acceso a todas las comunas.
+            </div>
+          </details>
+
+          <!-- Question 5 -->
+          <details class="group">
+            <summary
+              class="text-gray-900 flex justify-between items-center p-4 bg-gray-100 hover:bg-gray-200 cursor-pointer focus:outline-none transition">
+              <span class="font-semibold">¿Puedo simplemente comprar bases de datos?</span>
+              <svg class="w-5 h-5 transition-transform duration-200 group-open:rotate-180" viewBox="0 0 20 20"
+                fill="currentColor">
+                <path d="M7 10l5 5 5-5H7z" />
+              </svg>
+            </summary>
+            <div class="p-4 bg-gray-50 text-gray-700">
+              Ofrecemos servicios de bases de datos inmobiliarias para soluciones empresariales. Contáctate con
+              nosotros para entender tus necesidades.
+            </div>
+          </details>
+
+        </div>
+      </div>
     </div>
   </section>
 
 
-
-
-  <!-- info section -->
-  <section class="info_section layout_padding2-bottom">
-    <hr />
-    <div class="container">
-      <h2 class="">
-        DATABAM
-      </h2>
+  <div>
+    <div class="px-8 pt-5 pb-5">
+      <h5><strong>DATABAM</strong></h5>
       <p>Levantando data inmobiliaria desde 2019</p>
     </div>
-    <div class="container info_content">
+    <div class="px-8 pb-5">
+      <p>
+        <a href="LICENSE.txt">MIT License</a>
+      </p>
     </div>
-  </section>
+  </div>
 
-  <script type="text/javascript" src="js/jquery-3.4.1.min.js"></script>
-  <script type="text/javascript" src="js/bootstrap.js"></script>
+  <script>
+    const monthlyBtn = document.getElementById('monthlyBtn');
+    const annualBtn = document.getElementById('annualBtn');
+
+    monthlyBtn.addEventListener('click', () => {
+      monthlyBtn.classList.add('active');
+      annualBtn.classList.remove('active');
+      document.getElementById('tasadorPrice').innerText = '$50.000';
+      document.getElementById('empresaPrice').innerText = '$100.000';
+      document.getElementById('creditsTasador').innerText = '200 créditos mensuales';
+      document.getElementById('creditsEmpresa').innerText = '600 créditos mensuales';
+      document.getElementById('dashboardsEmpresa').innerHTML = '<strong>Dashboards</strong> <br> Dashboards Plan Tasador<br> + Leads de Herencia';
+    });
+
+    annualBtn.addEventListener('click', () => {
+      annualBtn.classList.add('active');
+      monthlyBtn.classList.remove('active');
+      document.getElementById('tasadorPrice').innerText = '$41.667'; // Example annual price (with 2 months free)
+      document.getElementById('empresaPrice').innerText = '$83.333'; // Example annual price (with 2 months free)
+      document.getElementById('creditsTasador').innerText = '2.400 créditos anuales';
+      document.getElementById('creditsEmpresa').innerText = '7.200 créditos anuales';
+      document.getElementById('dashboardsEmpresa').innerHTML = '<strong>Dashboards</strong> <br> Dashboards Plan Tasador + Leads de Herencia<br><strong>+ 1 Dashboard a la medida</strong>';
+    });
+  </script>
+
+
   <script src="https://www.google.com/recaptcha/api.js" async defer></script>
   <script>
     var form = document.getElementById("my-form");
@@ -390,6 +649,15 @@
     }
     form.addEventListener("submit", handleSubmit)
   </script>
+
+  <style>
+    .active {
+      background-color: #4CAF50;
+      /* Green */
+      color: white;
+    }
+  </style>
+
 </body>
 
 </html>
