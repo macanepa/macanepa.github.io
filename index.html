@@ -532,6 +532,93 @@
     }
   </style>
 
+
+
+
+
+
+
+
+  <script type="module">
+    import Chatbot from "https://cdn.jsdelivr.net/npm/flowise-embed/dist/web.js";
+    Chatbot.init({
+      chatflowid: "ccae45d0-2466-4153-97d1-d1d165021370",
+      apiHost: "https://flowise.databam.cl",
+      chatflowConfig: {
+        systemMessagePrompt: "Eres un asistente de IA útil",
+        temperature: 0,
+      },
+      theme: {
+        button: {
+          backgroundColor: "#1E1E1E",
+          right: 20,
+          bottom: 20,
+          size: "medium",
+          iconColor: "#FFFFFF",
+          borderRadius: 50,
+        },
+        tooltip: {
+          showTooltip: true,
+          tooltipMessage: 'Chatea con Databam!',
+          tooltipBackgroundColor: 'black',
+          tooltipTextColor: 'white',
+          tooltipFontSize: 16
+        },
+        chatWindow: {
+          feedback: {
+            color: '#2E2E2E'
+          },
+          welcomeMessage: "¡Hola! Soy un asistente de Databam ¿En qué puedo ayudarte?",
+          backgroundColor: "#FFFFFF",
+          title: "Chatea con nuestra I.A",
+          height: 800,
+          width: 500,
+          fontSize: 16,
+          poweredByTextColor: "#FFFFFF",
+          starterPrompts: [
+            "Cómo funcionan los créditos?",
+            "Tienen API?",
+            "Qué datos tienen?"
+          ],
+          botMessage: {
+            backgroundColor: "#d9ccf3", // Secondary pastel
+            textColor: "#2a1a4f",
+            showAvatar: true,
+          },
+          userMessage: {
+            backgroundColor: "#b3eef4", // Primary pastel
+            textColor: "#00454d",
+            showAvatar: false,
+          },
+          dateTimeToggle: {
+            date: true,
+            time: true
+          },
+          textInput: {
+            placeholder: "Escribe tu pregunta",
+            backgroundColor: "#FFFFFF",
+            textColor: "#1E1E1E",
+            sendButtonColor: "#1E1E1E",
+            autoFocus: true,
+            maxChars: 250,
+            maxCharsWarningMessage: "Has excedido el límite de caracteres. Por favor, ingresa menos de 250 caracteres.",
+            autoFocus: true,
+            sendMessageSound: true,
+            receiveMessageSound: true,
+          },
+          footer: {
+            textColor: '#1E1E1E',
+            text: '',
+            company: '',
+            companyLink: 'https://flowiseai.com'
+          }
+        }
+      }
+    });
+  </script>
+
+
+
 </body>
 
 </html>
